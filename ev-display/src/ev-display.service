@@ -1,0 +1,14 @@
+[Unit]
+Description=Display Control Service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=ari
+ExecStart=/home/$USER/ev-conversion-dashboard/ev-display/target/debug/display
+
+[Install]
+WantedBy=default.target
