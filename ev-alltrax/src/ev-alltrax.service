@@ -1,0 +1,14 @@
+[Unit]
+Description=Sambar USB Alltrax SR Data Collection Service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=ari
+ExecStart=/home/$USER/usb-alltrax/target/debug/ev-alltrax
+
+[Install]
+WantedBy=default.target
