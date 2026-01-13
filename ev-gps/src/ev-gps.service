@@ -1,0 +1,14 @@
+[Unit]
+Description=USB GPS Data Collection Service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=ari
+ExecStart=/home/$USER/ev-conversion-dashboard/ev-gps/target/debug/ev-gps
+
+[Install]
+WantedBy=default.target
