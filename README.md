@@ -1,7 +1,7 @@
 # EV Conversion Dashboard
 Modular microservices and web front end of electric vehicle conversions
 
-The EV conversion dashboard includes microservices to ingest data from the following devices:
+The EV conversion dashboard includes a set of microservices written in Rust to ingest data from the following devices and publish over MQTT for live viewing as well as storing in InfluxDB using Telegraf:
 | Type | Device | Comms |
 |------|--------|-------|
 | BMS | [Thunderstruck MCU](https://www.thunderstruck-ev.com/mcu.html) | CAN |
