@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.3",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/joy": "^5.0.0-alpha.85",
+    "@mui/material": "^5.15.18",
+    "@mui/x-charts": "^7.5.0",
+    "leaflet": "^1.9.4",
+    "mapbox-gl": "^2.15.0",
+    "mqtt": "^4.3.7",
+    "next": "^16.0.10",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-leaflet": "^4.2.1",
+    "react-map-gl": "^7.1.2",
+    "sass": "^1.63.6",
+    "swr": "^2.2.0"
+  }
+}
