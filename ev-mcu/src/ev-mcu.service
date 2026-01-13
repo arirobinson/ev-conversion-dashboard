@@ -1,0 +1,14 @@
+[Unit]
+Description=EV MCU Data Collection Service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=ari
+ExecStart=/home/$USER/ev-conversion-dashboard/ev-mcu/target/debug/ev-mcu
+
+[Install]
+WantedBy=default.target

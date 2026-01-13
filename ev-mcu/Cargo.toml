@@ -1,0 +1,14 @@
+[package]
+name = "ev-mcu"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+socketcan = "3.3.0"
+paho-mqtt = "0.12.0"
+embedded-can = "0.4.1"
+anyhow = "1.0.79"
+tokio = "1.35.1"
+nb = "1.1.0"
